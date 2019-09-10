@@ -1,0 +1,59 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Memory1.MainPage">
+
+
+    <ContentPage.Content>
+        
+        
+        <Grid x:Name="Board_grid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout Spacing="30" Grid.ColumnSpan="3" Orientation="Horizontal" >
+                <Label Text="Memory game" />
+                <Button x:Name="startBtn" Text="Start game" Clicked="GameStart" />
+                <Label Grid.Column="0" x:Name="TimerLbl"  Text="00:00:00" />
+            </StackLayout>
+            <Button Grid.Row="1" Grid.Column="0" Clicked="Cardbtn" />
+            <Button Grid.Row="1" Grid.Column="1" Clicked="Cardbtn" />
+            <Button Grid.Row="1" Grid.Column="2" Clicked="Cardbtn" />
+            <Button Grid.Row="1" Grid.Column="3" Clicked="Cardbtn" />
+            <Button Grid.Row="1" Grid.Column="4" Clicked="Cardbtn" />
+
+            <Button Grid.Row="2" Grid.Column="0" Clicked="Cardbtn" />
+            <Button Grid.Row="2" Grid.Column="1" Clicked="Cardbtn" />
+            <Button Grid.Row="2" Grid.Column="2" Clicked="Cardbtn" />
+            <Button Grid.Row="2" Grid.Column="3" Clicked="Cardbtn" />
+            <Button Grid.Row="2" Grid.Column="4" Clicked="Cardbtn" />
+
+            <Button Grid.Row="3" Grid.Column="0" Clicked="Cardbtn" />
+            <Button Grid.Row="3" Grid.Column="1" Clicked="Cardbtn" />
+            <Button Grid.Row="3" Grid.Column="2" Clicked="Cardbtn" />
+            <Button Grid.Row="3" Grid.Column="3" Clicked="Cardbtn" />
+            <Button Grid.Row="3" Grid.Column="4" Clicked="Cardbtn" />
+
+            <Button Grid.Row="4" Grid.Column="0" Clicked="Cardbtn" />
+            <Button Grid.Row="4" Grid.Column="1" Clicked="Cardbtn" />
+            <Button Grid.Row="4" Grid.Column="2" Clicked="Cardbtn" />
+            <Button Grid.Row="4" Grid.Column="3" Clicked="Cardbtn" />
+            <Button Grid.Row="4" Grid.Column="4" Clicked="Cardbtn" />
+            
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
